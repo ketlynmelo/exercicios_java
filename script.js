@@ -67,8 +67,10 @@ function exercicio2(){
 
 function exercicio3(){
     
-    console.log("Irei te ajudar no balanço anual da sua empresa!")
-    let bruto=0;
+    function calculo-WebTransportDatagramDuplexStream(){
+    
+    let ganho_total=0;
+    let perda_total=0;
 
     for(let i = 1; i >=12; i++ ) {
     bruto = parseFloat(prompt("Qual é o ganho bruto que você teve no mês " + i));
@@ -76,6 +78,7 @@ function exercicio3(){
 
 
 }
+    }
     
 }
 
