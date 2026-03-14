@@ -49,7 +49,7 @@ function exercicio3(){
     let mes = 1;
     let saldo_total = 0;
 
-    while(mes<=2){
+    while(mes<=12){
         let bruto = parseFloat(prompt("Digite qual foi o ganho bruto do mês " + mes ));
 
         if(isNaN(bruto)){
@@ -90,3 +90,9 @@ function exercicio3(){
 }
 
 // exercicio3();
+
+function exercicio4(){
+
+}
+
+exercicio4();
