@@ -93,6 +93,46 @@ function exercicio3(){
 
 function exercicio4(){
 
-}
+    let numeros = [];
+    let aux = 0 ;
+    let trocar = true;
+
+    for(let i = 1; i<=4; i++){
+
+        let numero = Number (prompt("Digite o número inteiro " + i));
+
+        while(!Number.isInteger(numero)){
+            numero = Number(prompt("Digite um número inteiro válido!"))
+        }
+
+        numeros.push(numero);
+
+    }
+
+    //ordenando os numeros do vetor
+
+        while(trocar){
+
+            trocar= false;
+
+                   for(let i=0; i< numeros.length - 1; i++){
+
+                      if (numeros[i] < numeros[i+1]){
+
+                       aux = numeros[i];
+                       numeros[i] = numeros[i+1];
+                       numeros[i+1] = aux;
+                       trocar = true;
+
+                  }
+             }
+
+        }
+
+     alert("Números digitados: " + numeros.join(", "));
+
+    }
+  
 
 exercicio4();
+
