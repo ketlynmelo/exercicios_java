@@ -315,4 +315,35 @@ function exercicio_10(){
 
 }
 
-exercicio_10()
+//exercicio_10()
+
+function exercicio_11(){
+
+   const funcionarios = {
+        nome : prompt("Digite o nome do funcionário: "),
+        salario_bruto : Number(prompt ("Digite o salario bruto do funcionario: ")),
+
+    }; 
+
+    if(funcionarios.salario_bruto<=1000){
+      funcionarios.desconto= 0.08;
+       
+    } else if(funcionarios.salario_bruto>1000 && funcionarios.salario_bruto<1500){
+        funcionarios.desconto= 0.085;
+        
+
+    }else if (funcionarios.salario_bruto>1500){
+        funcionarios.desconto= 0.09;
+       
+    }
+
+        funcionarios.salario_desconto = funcionarios.salario_bruto * funcionarios.desconto;
+        funcionarios.salario_total =  funcionarios.salario_bruto - funcionarios.salario_desconto;
+    
+
+    alert("Nome: " + funcionarios.nome + "\nSalário bruto: R$" + funcionarios.salario_bruto.toFixed(2) + "\nTaxa de desconto: " + (funcionarios.desconto*100) + "%"  + "\nValor desconto: R$" + funcionarios.salario_desconto.toFixed(2)  + "\nSálario líquido R$" + funcionarios.salario_total.toFixed(2));
+  
+
+}
+
+exercicio_11();
