@@ -297,4 +297,22 @@ function exercicio_9(){
 
 }
 
-exercicio_9();
+// exercicio_9();
+
+function exercicio_10(){
+
+    const funcionarios = {
+        nome : prompt("Digite o nome do funcionário: "),
+        salario_bruto : Number(prompt ("Digite o salario bruto do funcionario: ")),
+        desconto : 0.08, 
+
+    }
+
+    funcionarios.salario_desconto = funcionarios.salario_bruto * funcionarios.desconto,
+    funcionarios.salario_total =  funcionarios.salario_bruto - funcionarios.salario_desconto,
+
+    alert("Nome: " + funcionarios.nome + "\nSalário bruto: R$" + funcionarios.salario_bruto + "\nValor desconto: R$" + funcionarios.salario_desconto + "\nSálario líquido R$" + funcionarios.salario_total);
+
+}
+
+exercicio_10()
