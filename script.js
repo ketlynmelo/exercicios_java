@@ -204,10 +204,10 @@ function exercicio_7(){
        while(continuar){
         
 
-       let codigo_sabor = prompt("Olá, qual é o código do sabor que você deseja?");
+       let codigo_sabor = prompt("Olá, qual é o código do sabor que você deseja?").toLowerCase();
 
        if(sabores[codigo_sabor]){    
-        alert(`Sabor:  ${sabores[codigo_sabor].nome}\nPreço: R$ ${sabores[codigo_sabor].preco}`);
+        alert("Sabor: " + sabores[codigo_sabor].nome + "\nPreço: R$ " + sabores[codigo_sabor].preco);
        } else{
         alert ("Digite um código válido!");
        }
@@ -219,5 +219,41 @@ function exercicio_7(){
        sabores_sorvete();
     }
 
-exercicio_7();
+//exercicio_7();
 
+function exercicio_8(){
+
+    let a = Number(prompt("Digite o primeiro número inteiro :"));
+
+    while(!Number.isInteger(a)){
+        a = Number(prompt("Digite um número inteiro válido! :"));
+
+    }
+
+    let b = Number(prompt("Digite o segundo número inteiro :"));
+
+    while(!Number.isInteger(b)){
+        b = Number(prompt("Digite um número inteiro válido! :"));
+
+    }
+
+    console.log(" A diferença deles é ", a-b);
+    console.log(" O dobro da primeira somado ao triplo da segunda é ", (2*a) + (3*b));
+    console.log(" A multiplicação delas são ", a*b);
+
+    let diferenca = a - b ;
+    let dobro = 2 * a;
+    let triplo = 3 * b;
+    let soma = dobro + triplo;
+    let multi = a*b;
+
+    alert(" A diferença deles é " + diferenca);
+    alert(" O dobro da primeira somado ao triplo da segunda é " + soma);
+    alert(" A multiplicação delas são " + multi);
+
+
+
+
+}
+
+exercicio_8();
