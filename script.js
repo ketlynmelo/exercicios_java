@@ -1,33 +1,8 @@
-// console.log("Hello world");
+    function exercicio1(){
+     let soma = 0;
+     let continuar = true;
 
-// let nome = "Ketlyn";
-// console.log(nome);
-
-// const pi = 3.14;
-// console.log(pi);
-
-
-// let n1= 3;
-// let n2= 2;
-
-// console.log(n1+n2);
-
-// function saudacao(){
-//     console.log("Olá meu nome é " + nome)
-// };
-
-// function somar(n3,n4){
-//      console.log(n3+n4)
-// };
-
-// saudacao();
-// somar(9,6);
-
-function exercicio1(){
-    let soma = 0;
-    let continuar = true;
-
-    while(continuar){
+     while(continuar){
         let numero = parseFloat(prompt("Digite um número (Ou zero para encerrar): "));
 
         //modelo antigo:soma = soma + numero;
@@ -47,7 +22,7 @@ function exercicio1(){
 
 }
 
-//exercicio1);
+//exercicio1();
 
 function exercicio2(){
 
@@ -63,23 +38,55 @@ function exercicio2(){
 }
 }
 
-//exercicio2);
+// exercicio2();
 
 function exercicio3(){
     
-    function calculo-WebTransportDatagramDuplexStream(){
+    function calculo_mensal(){
     
-    let ganho_total=0;
-    let perda_total=0;
+    let ganho_total = 0;
+    let perda_total = 0;
+    let mes = 1;
+    let saldo_total = 0;
 
-    for(let i = 1; i >=12; i++ ) {
-    bruto = parseFloat(prompt("Qual é o ganho bruto que você teve no mês " + i));
+    while(mes<=2){
+        let bruto = parseFloat(prompt("Digite qual foi o ganho bruto do mês " + mes ));
 
+        if(isNaN(bruto)){
+            alert("Por favor, digite um número válido!");
 
+        }else{
+            ganho_total+=bruto;
+        }
+        
+        let gasto = parseFloat(prompt("Digite qual foi o gasto do mês " + mes ));
 
-}
+        if(isNaN(gasto)){
+            alert("Por favor, digite um número válido!");
+
+        }else{
+           perda_total+=gasto;
+        }
+        
+        mes++;
+    } 
+        alert("Seu bruto anual foi de : " + ganho_total);
+        alert("Seu gasto anual foi de: " + perda_total); 
+
+        saldo_total= ganho_total-perda_total;
+
+        alert("Seu saldo financeiro foi de: " + saldo_total);
+         
+        if(saldo_total>0){
+            alert("Você lucrou esse ano!")
+
+        } else{
+            alert("Você teve prejuízo esse ano!")
+        }
     }
-    
+ 
+      calculo_mensal();
+
 }
 
-//exercicio3);
+// exercicio3();
