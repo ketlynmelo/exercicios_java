@@ -165,6 +165,18 @@ function exercicio_5(){
 
 function exercicio_6(){
 
+    let letra = prompt("Digite uma letra: ");
+
+    //verifica se é uma das vogais
+    if(letra === "a" || letra === "A" || letra === "e" || letra === "E" || letra === "i" || letra === "I" || letra ==="o" || letra === "O" || letra ==="u" || letra === "U" ){
+ 
+        console.log("A letra '" + letra + "' é uma vogal");
+    } else{
+
+        console.log("A letra '" + letra + "' é uma consoante");
+    }
+
+
 }
 
 exercicio_6();
