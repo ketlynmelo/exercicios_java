@@ -179,7 +179,45 @@ function exercicio_6(){
 
 }
 
-exercicio_6();
+// exercicio_6();
 
+function exercicio_7(){
 
+    let continuar= true;
+
+    function sabores_sorvete(){
+
+       const sabores = {
+
+        a: {nome: "Chocolate", preco: 1.50},
+        b: {nome: "Morango", preco: 2.50},
+        c: {nome: "Creme", preco: 2.50},
+        d: {nome: "Manga", preco: 3.20},
+        e: {nome: "Melancia", preco: 3.40},
+        f: {nome: "Vanilla Ice", preco: 3.00},
+        g: {nome: "Céu Azul", preco: 3.60},
+        h: {nome: "Brownie", preco: 4.00},
+        i: {nome: "Hawaiano", preco: 5.00}
+
+       };
+
+       while(continuar){
+        
+
+       let codigo_sabor = prompt("Olá, qual é o código do sabor que você deseja?");
+
+       if(sabores[codigo_sabor]){    
+        alert(`Sabor:  ${sabores[codigo_sabor].nome}\nPreço: R$ ${sabores[codigo_sabor].preco}`);
+       } else{
+        alert ("Digite um código válido!");
+       }
+
+      continuar = confirm("Deseja ver outro código?");
+    
+          }
+       }
+       sabores_sorvete();
+    }
+
+exercicio_7();
 
