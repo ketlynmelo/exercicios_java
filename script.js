@@ -98,6 +98,8 @@ function exercicio_4(){
     let trocar = true;
 
     for(let i = 1; i<=4; i++){
+        //numeros.push(Number(prompt("Digite um numero inteiro:")));
+        //numeros.sort((a,b) => b - a);
 
         let numero = Number (prompt("Digite o número inteiro " + i));
 
@@ -156,6 +158,8 @@ function exercicio_5(){
         console.log(numero + " agora é par");
 
     }
+
+    alert("Resultado: " + numero);
 
     
 
@@ -260,38 +264,48 @@ function exercicio_8(){
 
 function exercicio_9(){
 
-    let numeros = [];
-    let aux = 0 ;
+    // let numeros = [];
+    // let aux = 0 ;
 
-    for(let i=0; i<=1; i++){
+    // for(let i=0; i<=1; i++){
 
-        let numero = Number (prompt( "Digite um número inteiro " ));
+    //     let numero = Number (prompt( "Digite um número inteiro " ));
     
-       while(!Number.isInteger(numero)){
-        numero = Number (prompt( "Digite um número inteiro válido! " ));
-    }
+    //    while(!Number.isInteger(numero)){
+    //     numero = Number (prompt( "Digite um número inteiro válido! " ));
+    // }
 
-        numeros.push(numero);
-    }
+    //     numeros.push(numero);
+    // }
 
-    console.log("Os números são " +  numeros.join (", "));
+    // console.log("Os números são " +  numeros.join (", "));
 
-    for(let i=0; i< numeros.length - 1; i++){
+    // for(let i=0; i< numeros.length - 1; i++){
 
-                      if (numeros[i] < numeros[i+1]){
+    //                   if (numeros[i] < numeros[i+1]){
 
-                       aux = numeros[i];
-                       numeros[i] = numeros[i+1];
-                       numeros[i+1] = aux;
+    //                    aux = numeros[i];
+    //                    numeros[i] = numeros[i+1];
+    //                    numeros[i+1] = aux;
 
-                  }
-             }
+    //               }
+    //          }
 
 
-    console.log("Os números em ordem é " +  numeros.join (", "));
-    alert("Os números em sequência é " + numeros.join (", "))
+    // console.log("Os números em ordem é " +  numeros.join (", "));
+    // alert("Os números em sequência é " + numeros.join (", "))
     
+    let a = Number(prompt("Me diga o primeiro numero: "));
+    let b = Number(prompt("Me diga o segundo  numero: "));
 
+    if(a>b){
+        console.log(b + a);
+        alert(b + a);
+    } else{
+        console.log(a + b);
+        alert(a + b);
+    
+    }
    
 
 
